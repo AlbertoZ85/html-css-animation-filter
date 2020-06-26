@@ -1,0 +1,50 @@
+body {
+    background-color: skyblue;
+}
+
+/* SQUARE 1 */
+.ex-1-square {
+    transition: background 2s ease;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+/* SQUARE 2 */
+.ex-2-square {
+    transition: width 2s ease-in-out;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+/* SQUARE 3 */
+.ex-3-square {
+    transition: border-radius 1.5s ease-in-out;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+/* SQUARE 4 */
+.ex-4-square {
+    transition: opacity 1.5s cubic-bezier(.94,-0.01,0,1);
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+/* SQUARE 5 */
+.ex-5-square:hover {
+    transform: scale(1.25);
+    transition: transform 1.5s ease-in;
+}
+
+.ex-5-square:active {
+    transform: scale(0.75);
+    transition: transform 1.5s ease-out;
+}
