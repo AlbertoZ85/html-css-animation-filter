@@ -2,6 +2,7 @@ body {
     background-color: skyblue;
 }
 
+/* TRANSITIONS */
 /* SQUARE 1 */
 .ex-1-square {
     transition: background 2s ease;
@@ -47,4 +48,45 @@ body {
 .ex-5-square:active {
     transform: scale(0.75);
     transition: transform 1.5s ease-out;
+}
+
+/* FILTERS */
+/* IMG 6 */
+.ex-6-img {
+    transition: filter 1.5s ease;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+/* IMG 7 */
+.ex-7-img {
+    transition: filter 2s ease;
+}
+
+.ex-7-img:hover {
+    filter: sepia(0.75) grayscale(0.5);
+}
+
+/* IMG 8 */
+/* per combinare più transition si scrive un'unica transition con i vari effetti separati da una virgola, altrimenti con due transition non va */
+.ex-8-img {
+    transition: filter 3s ease, border-radius 5s ease;
+}
+
+.ex-8-img:hover {
+    filter: sepia(0.45) grayscale(0.45);
+    border-radius: 10px;
+}
+
+/* IMG 9 */
+.ex-9-img {
+    transition: filter 2s ease, border-radius 2s ease, transform 2s ease;
+}
+
+.ex-9-img:hover {
+    filter: saturate(0.5) brightness(0.25);
+    border-radius: 20px;
+    transform: scale(1.25);
 }
